@@ -42,11 +42,14 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 
 # 无线驱动
 CONFIG_PACKAGE_kmod-mt7603=y
-CONFIG_PACKAGE_kmod-mt7615e=y
-CONFIG_PACKAGE_kmod-mt7615-firmware=y
-CONFIG_PACKAGE_kmod-mt76x2-common=y
-CONFIG_PACKAGE_wpad-basic-wolfssl=y
-CONFIG_PACKAGE_iw=y
+CONFIG_PACKAGE_kmod-mt76-core=y
+CONFIG_PACKAGE_kmod-mt76x3=y  # 支持 MT7613
+# CONFIG_PACKAGE_kmod-mt7615e=n
+# CONFIG_PACKAGE_kmod-mt7615-firmware=n
+# CONFIG_PACKAGE_kmod-mt76x2-common=n
+CONFIG_PACKAGE_wpad-mini=y
+# CONFIG_PACKAGE_wpad-basic-wolfssl=n
+# CONFIG_PACKAGE_iw=n
 CONFIG_PACKAGE_iwinfo=y
 
 # SSH访问
@@ -65,8 +68,8 @@ CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
 
 # 使用v2ray-mini
-CONFIG_PACKAGE_v2ray-mini=y
-CONFIG_PACKAGE_v2ray-geodata=y
+CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_v2ray-core-mini=y
 
 # DNS解析 (选择需要的方案)
 CONFIG_PACKAGE_dnsmasq-full=dnsmasq
